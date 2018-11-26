@@ -10,7 +10,8 @@ def reformat_languages(languages)
       end 
       languages[:functional].keys.each do |x|
         if x == :javascript
-      
+        new_hash[x][:style] << :functional
+        else 
           new_hash[x][:style] = [:functional]
         end 
       end 
