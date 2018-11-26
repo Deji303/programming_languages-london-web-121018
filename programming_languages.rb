@@ -7,6 +7,7 @@ def reformat_languages(languages)
   new_hash.keys.each do |x|
       languages[:oo].keys.each do |x|
       if new_hash[x][:style] == []
+        binding.pry 
       new_hash[x][:style] = [:oo]
     else 
       new_hash[x][:style] << :oo
